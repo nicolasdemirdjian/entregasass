@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*------------------------- Reset ----------------------------*/
+/* line 3, ../PROYECTO/scss/estilos.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, ../PROYECTO/scss/estilos.scss */
+body {
+  font-family: 'Playfair Display', serif;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+}
+
+/*-------------------------- Navbar --------------------------*/
+/* line 18, ../PROYECTO/scss/estilos.scss */
+.banner {
+  position: sticky;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  background-size: 490px;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+}
+
+/* line 27, ../PROYECTO/scss/estilos.scss */
+.encabezado {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Akshar', sans-serif;
+  background-image: url(https://w0.peakpx.com/wallpaper/878/729/HD-wallpaper-bricks-wall-construction-pattern-abstract.jpg);
+  padding: 70px;
+}
+
+/* line 37, ../PROYECTO/scss/estilos.scss */
+.menu {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+  list-style: none;
+  font-size: large;
+  font-weight: bold;
+  padding: 30px;
+}
+
+/* line 49, ../PROYECTO/scss/estilos.scss */
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* line 60, ../PROYECTO/scss/estilos.scss */
+ul li a {
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* line 63, ../PROYECTO/scss/estilos.scss */
+ul li a:hover {
+  color: red;
+  letter-spacing: 1px;
+}
+
+/*-------------------------- Formatos genéricos --------------------------*/
+/* line 75, ../PROYECTO/scss/estilos.scss */
+.formato {
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  background-size: 490px;
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+  line-height: 150%;
+}
+
+/* line 87, ../PROYECTO/scss/estilos.scss */
+.interlineado {
+  padding: 10px;
+  margin-left: -10px;
+}
+
+/*-------------------------- Inicio --------------------------*/
+/* line 96, ../PROYECTO/scss/estilos.scss */
+p span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 101, ../PROYECTO/scss/estilos.scss */
+.steelframing {
+  font-size: 19px;
+}
+
+/* line 105, ../PROYECTO/scss/estilos.scss */
+.container {
+  width: 98%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  border: solid 2px;
+  min-height: auto;
+}
+
+/* line 116, ../PROYECTO/scss/estilos.scss */
+.container .container__box {
+  width: 450px;
+  height: 1000px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* line 123, ../PROYECTO/scss/estilos.scss */
+.container__title {
+  min-height: 60px;
+  color: #505049;
+  text-align: center;
+}
+
+/* line 130, ../PROYECTO/scss/estilos.scss */
+.container__text {
+  min-height: 720px;
+  font-size: 1.2rem;
+}
+
+/* line 137, ../PROYECTO/scss/estilos.scss */
+.aqui {
+  color: #8400ff;
+}
+
+/* line 141, ../PROYECTO/scss/estilos.scss */
+.aqui:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* line 147, ../PROYECTO/scss/estilos.scss */
+.img {
+  padding: 40px;
+  margin-top: -10%;
+}
+
+/*-------------------------- Sobre nosotros --------------------------*/
+/* line 155, ../PROYECTO/scss/estilos.scss */
+.lista {
+  padding: 30px;
+}
+
+/*-------------------------- Obras --------------------------*/
+/* line 161, ../PROYECTO/scss/estilos.scss */
+.segundogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+}
+
+/* line 167, ../PROYECTO/scss/estilos.scss */
+.segundogrid div {
+  border: 1px solid;
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* line 180, ../PROYECTO/scss/estilos.scss */
+.segundogrid p {
+  font-weight: bold;
+}
+
+/* line 184, ../PROYECTO/scss/estilos.scss */
+.imagenesobras {
+  height: 400px;
+  width: 417px;
+  align-items: center;
+}
+
+/*-------------------------- Contacto --------------------------*/
+/* line 196, ../PROYECTO/scss/estilos.scss */
+.contacto h3 {
+  font-weight: bold;
+}
+
+/*-------------------------- Grid --------------------------*/
+@media (max-width: 768px) {
+  /* line 205, ../PROYECTO/scss/estilos.scss */
+  .menu {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+  }
+  /* line 212, ../PROYECTO/scss/estilos.scss */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+  /* line 222, ../PROYECTO/scss/estilos.scss */
+  .container .container__text {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    min-height: 50px;
+  }
+  /* line 229, ../PROYECTO/scss/estilos.scss */
+  .segundogrid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: auto;
+  }
+  /* line 234, ../PROYECTO/scss/estilos.scss */
+  .container .container__box {
+    height: 900px;
+    min-height: 50px;
+  }
+  /* line 240, ../PROYECTO/scss/estilos.scss */
+  .container__title {
+    min-height: 40px;
+  }
+  /* line 244, ../PROYECTO/scss/estilos.scss */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    text-align: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/*-------------------------- Footer --------------------------*/
+/* line 260, ../PROYECTO/scss/estilos.scss */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/788/849/small/construction-skyline-background-concept-modern-city-construction-buildings-illustration-of-construction-site-with-cranes-and-skyscraper-vector.jpg);
+  height: 120px;
+}
+
+/* line 269, ../PROYECTO/scss/estilos.scss */
+.footer__item a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+/* line 276, ../PROYECTO/scss/estilos.scss */
+.footer__item a:hover {
+  color: red;
+}
+
+/* ---------------------Animaciones -------------------------*/
+/* line 283, ../PROYECTO/scss/estilos.scss */
+.movimiento {
+  transition: transform .3s;
+}
+
+/* line 288, ../PROYECTO/scss/estilos.scss */
+.movimiento:hover {
+  transform: translate(0, 8px);
+}
+
+/* line 293, ../PROYECTO/scss/estilos.scss */
+.img {
+  border-radius: 15px;
+  transition: all .5s;
+}
+
+/* line 298, ../PROYECTO/scss/estilos.scss */
+.img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* line 304, ../PROYECTO/scss/estilos.scss */
+#input {
+  background-color: white;
+  transition: all 5s;
+}
+
+/* line 309, ../PROYECTO/scss/estilos.scss */
+#input:focus {
+  background-color: #40a6c0;
+}
+
+/* line 314, ../PROYECTO/scss/estilos.scss */
+.imagenesobras {
+  border-radius: 15px;
+  transition: all .5s;
+}
+
+/* line 319, ../PROYECTO/scss/estilos.scss */
+.imagenesobras:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=estilos.css.map */
